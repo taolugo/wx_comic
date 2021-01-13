@@ -1,0 +1,8 @@
+<import src="./book-list/book-list.wxml"></import>
+<view class="container">
+  <block wx:for="{{types}}" wx:for-item="type" >
+  <view class="movie-template">
+    <template is="bookListTpl" data="{{...type}}"></template>
+  </view>
+  </block>
+</view>

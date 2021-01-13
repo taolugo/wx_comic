@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<import src="book-tpl/book-tpl.wxml"></import>
+ 
+
+<!--轮播图-->
+
+  <swiper class="swiper" indicator-dots="true" autoplay="true" vertical="{{false}}" interval="5000" duration="2000">
+    <block wx:for="{{imgList}}" wx:key="key" wx:for-item="item">
+      <swiper-item data-post-id="1">
+        <image src="{{item.src}}" class="slide-image"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="recommend">
+    <text class="recommendText">推荐漫画</text> 
+  </view>
+
+
+  <block wx:for="{{manhuas}}" wx:for-item="manhua" >
+    <view catchtap="onTapToDetail" data-book-id="{{manhua.id}}">
+      <template is="book-tpl" data="{{...manhua}}">
+      </template>
+    </view>
+    
+
+  </block>
+
+    <view class="wait">
+      <block wx:if="{{loadAllow}}">上滑加载</block>
+      <block wx:if="{{!loadAllow}}">到头了！</block>
+    </view>
+
+
+  
+
+
+

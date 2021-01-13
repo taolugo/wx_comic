@@ -1,0 +1,55 @@
+<view class="container book-detail">
+  <view class="book-item">
+      <view class="book-image">
+        <image src="{{manhua.descript}}"></image>
+      </view>
+      <view class="book-info">
+        <view>
+          
+          <text class="book-date">{{manhua.dateAdd}}</text>
+        </view>
+        <view class="book-kw">
+          <text class="label">{{manhua.keywords}}</text>
+          <block wx:if="{{manhua.isRecommend}}">
+            <image class="subscribe" src="/image/icon-aixin.png"></image>
+          </block>
+          <block wx:if="{{!manhua.isRecommend}}">
+            <image class="subscribe" src="/image/icon-aixin1.png"></image>
+          </block>
+        </view>
+        <view class="directors">
+          <text class="label">作者：</text>
+          <text class="author">{{manhua.author}}</text>         
+        </view>
+        <view class="genres">
+          <text class="label">类型：</text>
+          <text class="author">{{manhua.tags}}</text>
+        </view>
+        <view class="collect-wish">
+          <view>
+              看过(<text>{{manhua.extInfo.view}}</text>)
+          </view>
+          <view>
+              订阅(<text>{{manhua.extInfo.subscribe}}</text>)
+          </view>
+          <view>
+              评论(<text>{{manhua.extInfo.comment}}</text>)
+          </view>
+          <view>
+              热度(<text>{{manhua.extInfo.hot}}</text>)
+          </view>
+        </view>
+      </view> 
+    </view>
+    <view class="summary">
+      <view class="divLine"></view>
+      <text class="book-title">{{manhua.title}}</text>
+      <view class="divLine"></view>
+      <text class="title">剧情简介</text>
+      <view>
+        <text class="content" decode="true">
+          　　{{manhua.content}}
+        </text>
+      </view>
+    </view>
+</view>

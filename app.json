@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/index/book-detail/book-detail",
+    "pages/type/type",
+    "pages/type/more/more",
+    "pages/me/me",
+    "pages/me/subscribe/subscribe"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "漫画屋",
+    "navigationBarBackgroundColor": "#D2B48C",
+    "backgroundColor": "#fbf9fe",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "gray",
+    "selectedColor": "red",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/0225chooseD.png",
+        "selectedIconPath": "image/0225chooseS.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/type/type",
+        "iconPath": "image/0226typeD.png",
+        "selectedIconPath": "image/0226typeS.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "image/0225mineD.png",
+        "selectedIconPath": "image/0225mineS.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

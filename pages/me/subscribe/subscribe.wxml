@@ -1,0 +1,3 @@
+<import src="../../type/book-grid/book-grid-tpl.wxml" />
+<template is="bookGridTpl" data="{{manhuas}}">
+</template>

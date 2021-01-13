@@ -1,0 +1,33 @@
+@import "book-tpl/book-tpl.wxss";
+
+.swpier{
+  width: 100%;
+  height: 200px; 
+}
+
+.slide-image{
+  width: 100%;
+  height: 200px;
+}
+
+
+.recommend {
+  padding: 10px;
+}
+.recommendText{
+  font-size: 16px;
+  margin-left: 10rpx;
+  line-height: 40rpx;
+}
+
+.divLine{
+  background: #d8edff;
+  width: 100%;
+  height: 3rpx;
+ }
+
+ .wait{
+  text-align: center;
+  color: #c7c7c7;
+  font-size: 26rpx;
+ }

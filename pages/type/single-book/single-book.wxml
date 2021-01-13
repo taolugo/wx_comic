@@ -1,0 +1,8 @@
+
+<template name="bookTpl">
+  <view class="bk-container" catchtap="onTapToDetail" data-book-id="{{id}}">
+    <image class="img" src="{{descript}}"></image>
+    <text class="title">{{shortTitle}}</text>
+
+  </view>
+</template>

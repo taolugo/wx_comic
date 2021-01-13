@@ -1,0 +1,22 @@
+<import src="../single-book/single-book.wxml"></import>
+<template name="bookListTpl">
+  <view class="book-list-container">
+    <view class="inner-container">
+      <view class="book-head">
+        <text class="slogan">{{type}}</text>
+        <view class="more" catchtap="onMoreTap" data-category="{{type}}">
+          <text class="more-text">更多</text>
+          <image class="more-img" src="/image/icon/arrow-right.png"></image>
+        </view>
+      </view>
+
+      <view class="book-container">
+        <block wx:for="{{data}}" wx:for-item="manhua"  wx:key="key">
+        <template is="bookTpl" data="{{...manhua}}"></template>
+
+        </block>
+
+      </view>
+    </view>
+  </view>
+</template>

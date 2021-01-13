@@ -1,0 +1,23 @@
+<view class="contain">
+
+<scroll-view>
+
+<!--头部-->
+<view class="headerView">
+ <image class="picture" src="/image/head.jpg"></image>
+ <label class="name">套路狗</label>
+</view>
+
+<!--表格-->
+ <block wx:for="{{items}}" wx:for-item="item">   
+    <view class="item" catchtap="move" data-action="{{item.text}}">
+      <image class="icon" src="{{item.icon}}"></image>
+      <label>{{item.text}}</label>
+      <image class="arrow" src="/image/0106arrow3x.png"></image>
+    </view>
+ </block>
+
+
+</scroll-view>
+
+</view>

@@ -1,0 +1,8 @@
+@import "book-list/book-list.wxss";
+.container{
+  background-color: #f3f3f3;
+}
+
+.movie-template{
+  margin-bottom: 30rpx;
+}

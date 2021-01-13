@@ -1,0 +1,8 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="container"><image class="avatar" src="/image/head.jpg"></image>
+<text class="motto">Hello,套路狗</text>
+<view class="journey-container" catchtap="jump">
+<text class="journey">进入漫画屋</text>
+</view>
+</view>
+

@@ -1,0 +1,10 @@
+<import src="../single-book/single-book.wxml" />
+<template name="bookGridTpl">
+  <view class="grid-container">
+    <block wx:for="{{manhuas}}" wx:for-item="manhua">
+      <view class="single-view-container">
+        <template is="bookTpl" data="{{...manhua}}"></template>
+      </view>
+    </block>
+  </view>
+</template>

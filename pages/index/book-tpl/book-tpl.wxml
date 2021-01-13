@@ -1,0 +1,23 @@
+<template name="book-tpl">
+  <view class="divLine"></view>
+  <view class="item" >
+    <view  class="item-left"> 
+      <image class="courseImage" src="{{descript}}" />
+    </view>
+
+
+    <view class="item-right">
+      <view class="titleView">
+        <text class="titleText">{{title}}</text>
+      </view>
+      <view class="timeView">
+        <text class="timeText">{{dateAdd}}</text>
+      </view>
+      <view class="priceView">
+        <text class="gradeText">{{author}}</text>
+        <text class="priceText">{{tags}}</text>
+      </view>
+    </view> 
+  </view>
+
+</template>

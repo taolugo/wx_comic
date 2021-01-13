@@ -1,0 +1,57 @@
+
+.item{
+  background: white;
+  height: 220rpx;
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0 5px 5px;
+  border-top: 0.5px solid rgb(245, 245, 245);
+ }
+ 
+ /*图片背景View*/
+ .item-left{
+   width: 160rpx;
+   height: 190rpx;
+ }
+ 
+ /*课程图片*/
+ .courseImage{
+   margin-top: 20rpx;
+   margin-left: 15rpx;
+   width: 140rpx;
+   height: 190rpx;
+ }
+ 
+ /*右边item*/
+ .item-right{
+   margin-left: 5rpx;
+   flex: 1; /*占满两侧空白部分*/
+ }
+ 
+ /*右边item的view*/
+ .item-right view{
+   margin: 8px 0 0 5px;
+ }
+ 
+ /*时间*/
+ .timeText{
+ 
+  font-size: 11px;
+    color: darkgray;
+ 
+ }
+ 
+ /*年级*/
+ .gradeText{
+   font-size: 11px;
+    color: darkgray;
+ 
+ }
+ /*价格*/
+ .priceText{
+ 
+   font-size: 13px;
+   color: burlywood;
+   float: right;
+   padding-right: 10px;
+ }
